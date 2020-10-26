@@ -40,7 +40,7 @@ app.use(passport.session());
 // MONGOOSE
 // MongoDB Atlas : compte google sandrine GMAIL
 // utilisateur db : adminElvire - admin4315
-mongoose.connect('mongodb+srv://adminElvire:admin4315@cluster0.cukk7.mongodb.net/cookingdb?retryWrites=true&w=majority', 
+mongoose.connect(process.env.DB_URI, 
     { useNewUrlParser: true,
       useUnifiedTopology: true
     })
